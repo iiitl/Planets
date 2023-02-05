@@ -2,11 +2,20 @@
 <html lang="en">
 <head>
     <title>Planet</title>
+    <link rel="stylesheet" href="./style/checkbox-style.css">  
 </head>
 <body>
     
     <canvas id="field" style="position: absolute; z-index: 1;"></canvas>
     <canvas id="scribble" style="position: absolute;"></canvas>
+
+    <div class="checkbox-container">
+      <div class="checkbox-holder">
+        <label for="vector-check"><span>Hide Vectors:</span></label>
+        <input type="checkbox" id="vector-check">
+      </div>
+    </div>
+
     
     <script src="Planet.js"></script>
     <script src="Particle.js"></script>

@@ -122,6 +122,24 @@ function drawDebugLines() {
 }
 
 
+
+/*
+  following is code which turns the vector visibility on and off
+  - on click of checkbox, it checks if checkbox is checked or not, then accordingly hides/shows the vectors
+*/
+let vectorCheckbox = document.querySelector('#vector-check');
+let canvasField = document.querySelector('#field');
+
+// checkbox click event listener
+vectorCheckbox.addEventListener('click', (ev) => {
+  if(vectorCheckbox.checked == true) {
+    canvasField.style.display = 'none';
+  }
+  else {
+    canvasField.style.display = 'block';    
+  }
+});
+
 // Initialize vector field once and only change on planet update
 for (vector of vectors) {
 	vector.update();
