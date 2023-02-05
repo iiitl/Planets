@@ -2,8 +2,32 @@
 <html lang="en">
 <head>
     <title>Planet</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="modal.js" defer></script>
 </head>
 <body>
+
+  <div class="button-holder">
+    <button class="controls-button">CONTROLS</button>
+  </div>
+  <div class="entire-page">
+    <div class="modal">
+      <div class="modal-content">
+          <div class="top-panel">
+            <div class="control-heading">
+              <h1>Controls</h1>
+            </div>  
+            <span class="close">&times;</span>
+          </div>
+          <div class="control-description">
+            <p><span>Click</span> - create a new particle</p>
+            <p><span>Shift + click</span> - create a new attracting body</p>
+            <p><span>Click and Drag</span> (empty space) - adjust particle's initial speed and direction</p>
+            <p><span>Click and Drag</span> (on an attracting body) - displace the attracting body</p>
+          </div>
+      </div>
+    </div>
+  </div>
     
     <canvas id="field" style="position: absolute; z-index: 1;"></canvas>
     <canvas id="scribble" style="position: absolute;"></canvas>
