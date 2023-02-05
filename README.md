@@ -9,6 +9,12 @@
 - You can provide partices with an initial velocity.
 - It describes the path the particle is going to approach.
 
+> You can view the live website here
+
+- [Planet: gravitational simulation (latest)](https://deploy-preview-9--tsarprince-planets.netlify.app/)
+- [Planet: gravitational simulation (original)](https://tsarprince.github.io/Planet/)
+
+
 ---
 
 
