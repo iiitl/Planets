@@ -136,9 +136,22 @@ vectorCheckbox.addEventListener('click', (ev) => {
     canvasField.style.display = 'none';
   }
   else {
-    canvasField.style.display = 'block';    
+    canvasField.style.display = 'block';  
   }
 });
+
+
+// -------------------------------------------------------
+/*
+  - checkbox considers the click event, whereas the particle creation considers the mousedown event
+  - thus i have added a mousedown event and stopped its propagation so that planet creation while clicking checkbox stops
+*/
+vectorCheckbox.addEventListener('mousedown', (ev) => {
+  ev.stopPropagation();
+});
+
+// ---------------------------------------------------------------
+
 
 // Initialize vector field once and only change on planet update
 for (vector of vectors) {
