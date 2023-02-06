@@ -46,8 +46,8 @@ class Vector {
             let theta = Math.atan2(y2 - y1, x2 - x1);
             
 
-            this.head.x -= 1/Math.pow(r, 2) * Math.cos(theta);
-            this.head.y -= 1/Math.pow(r, 2) * Math.sin(theta);
+            this.head.x -= 1/Math.pow(r, 3) * Math.cos(theta);
+            this.head.y -= 1/Math.pow(r, 3) * Math.sin(theta);
 
             
             this.distancesFromOtherPlanet.push(r);
