@@ -34,8 +34,8 @@ class Particle {
                 let y2 = planet.y;
                 let r = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
                 let theta = Math.atan2(y2 - y1, x2 - x1);
-                nextVelocity.x += 1 / Math.pow(r, 2) * Math.cos(theta) * speed;
-                nextVelocity.y += 1 / Math.pow(r, 2) * Math.sin(theta) * speed;
+                nextVelocity.x += 1 / Math.pow(r, 1) * Math.cos(theta) * speed;
+                nextVelocity.y += 1 / Math.pow(r, -1) * Math.sin(theta) * speed;
             }
 
             nextPos.x += nextVelocity.x;
